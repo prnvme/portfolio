@@ -7,18 +7,18 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://prnvme.github.io/portfolio'",
-    "predeploy": "npm run build-gh",
+    "build-gh": "parcel build --public-url '/portfolio/'",
+    "predeploy": "npm run build-gh && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/prnvme/portfolio.git"
   },
-  "author": "Microsoft",
+  "author": "prnvme",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/prnvme/portfolio/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
