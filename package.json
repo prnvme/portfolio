@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url '/portfolio/'",
+    "build-gh": "parcel build --public-url https://prnvme.github.io/portfolio/",
     "predeploy": "npm run build-gh && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
